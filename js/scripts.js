@@ -115,6 +115,21 @@ $(function() {
 
 	var isMobile = false;
 	var justSwitched = false;
+	function setEqualHeight() {
+		$('[data-equal]').each(function() {
+			var t = $(this).find('[data-elem]');
+			if ( !isMobile ) {
+				var max = 0;
+				t.each(function() {
+					var h = $(this).outerHeight(); 
+					max = h > max ? h : max;
+				});
+				t.outerHeight(max);
+			} else {
+				t.outerHeight('auto');
+			}
+		});
+	}
 	function detectDevice() {
 		var temp = isMobile;
 		if ( Modernizr.mq('(max-width:960px)') ) {
@@ -145,6 +160,7 @@ $(function() {
 				}
 			}
 		}
+		setEqualHeight();
 	}
 	startApp();
 	$(window).on('resize', _.debounce(function() {
