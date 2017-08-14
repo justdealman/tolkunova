@@ -155,7 +155,6 @@ $(function() {
 			$('[data-table-row] span.title').remove();
 		}
 	}
-	
 	function startApp() {
 		if ( $('.welcome').length ) {
 			setWelcome();
@@ -176,8 +175,12 @@ $(function() {
 		setEqualHeight();
 	}
 	startApp();
+	var lastWidth = $(window).width();
 	$(window).on('resize', _.debounce(function() {
-		startApp();
+		if ( $(window).width() != lastWidth ) {
+			startApp();
+			lastWidth = $(window).width();
+		}
 	}, 100));
 	animateAppearance();
 	$(window).on('scroll', function() {
