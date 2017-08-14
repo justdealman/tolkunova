@@ -143,6 +143,18 @@ $(function() {
 			justSwitched = true;
 		}
 	}
+	function rebuildMobileTable() {
+		if ( isMobile ) {
+			$('[data-table-row]').each(function() {
+				var l = $(this).find('.item').size();
+				for ( var i=0; i<l; i++ ) {
+					$(this).find('.item').eq(i).prepend('<span class="title">'+$('[data-table-header]').find('.item').eq(i).text()+':</span> ');
+				}
+			});
+		} else {
+			$('[data-table-row] span.title').remove();
+		}
+	}
 	
 	function startApp() {
 		if ( $('.welcome').length ) {
@@ -159,6 +171,7 @@ $(function() {
 					$('.about__rc').detach().insertAfter($('.about__lc'));
 				}
 			}
+			rebuildMobileTable();
 		}
 		setEqualHeight();
 	}
@@ -224,5 +237,34 @@ $(function() {
 			t.hide();
 			$(this).text('Читать далее');
 		}
+	});
+	$('[data-open]').on('click', function(e) {
+		e.preventDefault();
+		closeMenu();
+		$(this).addClass('is-active');
+		var t = $('[data-target="'+$(this).attr('data-open')+'"]');
+		t.siblings('[data-target]').removeClass('is-opened is-active');
+		$('.fade-bg').addClass('is-opened');
+		t.addClass('is-opened');
+		var h = $(window).scrollTop()+($(window).height()-t.outerHeight())/2;
+		if ( !isMobile ) {
+			var diff = 30;
+		} else {
+			var diff = 15;
+		}
+		if ( h < $(window).scrollTop()+(diff*2) ) {
+			h = $(window).scrollTop()+diff;
+		}
+		t.css({
+			'top': h+'px'
+		}).addClass('is-active').siblings('[data-target]').removeClass('is-active');
+	});
+	$('[data-target] .modal--close, .fade-bg').on('click', function(e) {
+		e.preventDefault();
+		$('[data-target], .fade-bg').removeClass('is-opened');
+		$('[data-open]').removeClass('is-active');
+	});
+	$('.modal__tabs h3').on('click', function(e) {
+		$(this).toggleClass('is-active');
 	});
 });
