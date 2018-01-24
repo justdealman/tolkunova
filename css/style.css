@@ -335,16 +335,16 @@ button::-moz-focus-inner {
 	box-shadow:0 1px 1px rgba(0,0,0,0.35);
 }
 .header--social .facebook-icon {
-	background-image:url('../img/facebook-icon.png');
+	background-image:url('../img/facebook-icon.svg');
 }
 .header--social .vkontakte-icon {
-	background-image:url('../img/vkontakte-icon.png');
+	background-image:url('../img/vkontakte-icon.svg');
 }
 .header--social .youtube-icon {
-	background-image:url('../img/youtube-icon.png');
+	background-image:url('../img/youtube-icon.svg');
 }
 .header--social .instagram-icon {
-	background-image:url('../img/instagram-icon.png');
+	background-image:url('../img/instagram-icon.svg');
 }
 .welcome {
 	position:relative;
