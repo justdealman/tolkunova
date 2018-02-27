@@ -744,16 +744,57 @@ button::-moz-focus-inner {
 	margin:0;
 }
 .menu__nav a {
+	position:relative;
 	display:block;
 	color:#ffffff;
 	font-size:16px;
 	line-height:24px;
 	font-family:'Noto Serif', serif;
 	text-decoration:underline;
-	padding:8px 25px;
+	padding:8px 25px 8px 52px;
 }
 .menu__nav a:hover {
 	text-decoration:none;
+}
+.menu__nav--icon {
+	position:absolute;
+	left:25px;
+	top:12px;
+	display:inline-block;
+	width:16px;
+	height:16px;
+	background-repeat:no-repeat;
+	background-position:0 0;
+}
+.menu__nav--icon_home {
+	background-image:url('../img/icons8-home-16.png');
+}
+.menu__nav--icon_about {
+	background-image:url('../img/icons8-graduation-cap-16.png');
+}
+.menu__nav--icon_contacts {
+	background-image:url('../img/icons8-phone-16.png');
+}
+.menu__nav--icon_schedule {
+	background-image:url('../img/icons8-training-16.png');
+}
+.menu__nav--icon_online {
+	background-image:url('../img/icons8-laptop-16.png');
+}
+.menu__nav--icon_shop {
+	background-image:url('../img/icons8-shopping-bag-16.png');
+}
+.menu__nav--icon_articles {
+	background-image:url('../img/icons8-literature-16.png');
+}
+.menu__nav--icon_reviews {
+	background-image:url('../img/icons8-speech-bubble-16.png');
+}
+.menu__nav--icon_social {
+	background-image:url('../img/icons8-heart-outline-16.png');
+}
+.menu__nav--icon_forum {
+	background-image:url('../img/icons8-user-account-16.png');
 }
 .menu__form {
 	padding:26px 15px 13px;
@@ -4154,7 +4195,11 @@ button::-moz-focus-inner {
 		height:calc(100% - 50px);
 	}
 	.menu__nav a {
-		padding:7px 15px;
+		padding:7px 15px 7px 42px;
+	}
+	.menu__nav--icon {
+		left:15px;
+		margin-top:-1px;
 	}
 	.menu--private {
 		padding:0;
