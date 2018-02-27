@@ -90,6 +90,15 @@
     font-weight:normal;
     font-style:italic;
 }
+@font-face {
+    font-family:'Mon Amour One';
+    src:url('../fonts/monamourone-medium.eot');
+    src:url('../fonts/monamourone-medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/monamourone-medium.woff') format('woff'),
+        url('../fonts/monamourone-medium.ttf') format('truetype');
+    font-weight:500;
+    font-style:normal;
+}
 
 /* Default */
 
@@ -471,14 +480,14 @@ button::-moz-focus-inner {
 .welcome .text {
 	position:absolute;
 	left:0;
-	top:36px;
+	top:20px;
 	z-index:2;
 	width:100%;
 	color:#ffffff;
 	font-style:italic;
 	font-family:'Philosopher', serif;
 	padding:0 6%;
-}
+}/*
 .welcome .item-4 .text {
 	top:45px;
 }
@@ -499,13 +508,13 @@ button::-moz-focus-inner {
 }
 .welcome .item-10 .text {
 	top:29px;
-}
+}*/
 .welcome .text h2 {
 	color:#fffeff;
-	font-size:50px;
-	line-height:36px;
-	font-weight:normal;
-	font-family:'Rosa Marena', serif;
+	font-size:32px;
+	line-height:32px;
+	font-weight:500;
+	font-family:'Mon Amour One', serif;
 	text-align:center;
 	text-shadow:0 2px 0 #000000;
 	margin:0 0 32px;
@@ -545,7 +554,7 @@ button::-moz-focus-inner {
 	top:2%;
 }
 .welcome [data="portrait"] .text h2 {
-	line-height:45px;
+	line-height:32px;
 	text-align:left;
 	text-shadow:0 1px 5px rgba(89,27,191,0.26);
 	margin-top:-3px;
@@ -556,8 +565,8 @@ button::-moz-focus-inner {
 }
 .welcome [data="bigsquare"] .text h2 {
 	color:#712f85;
-	font-size:60px;
-	line-height:62px;
+	font-size:52px;
+	line-height:58px;
 	text-shadow:none;
 	margin:0 0 13px;
 }
@@ -2978,12 +2987,12 @@ button::-moz-focus-inner {
 		width:20%;
 	}
 	.welcome .text {
-		top:7%;
+		top:6%;
 		padding:0 8%;
 	}
 	.welcome .text h2 {
-		font-size:32px;
-		line-height:30px;
+		font-size:24px;
+		line-height:24px;
 	}
 	.welcome .text h3 {
 		font-size:28px;
@@ -3012,8 +3021,8 @@ button::-moz-focus-inner {
 		padding:0 8%;
 	}
 	.welcome [data="bigsquare"] .text h2 {
-		font-size:48px;
-		line-height:52px;
+		font-size:38px;
+		line-height:38px;
 		margin:-1px 0 10px;
 	}
 	.welcome [data="bigsquare"] .text p {
@@ -4139,12 +4148,12 @@ button::-moz-focus-inner {
 		margin:0 0 14px;
 	}
 	.welcome .text h2 {
-		font-size:42px;
-		line-height:36px;
+		font-size:32px;
+		line-height:32px;
 	}
 	.welcome [data="bigsquare"] .text h2 {
-		font-size:42px;
-		line-height:36px;
+		font-size:32px;
+		line-height:32px;
 		margin:0 0 10px;
 	}
 	.welcome .item-1:before {
