@@ -1248,14 +1248,26 @@ button::-moz-focus-inner {
 	z-index:2;
 	padding:47px 13% 40px;
 }
+.about--plan--link {
+	display:block;
+	color:#312fa1;
+	font-size:21px;
+	line-height:25px;
+	text-align:center;
+	text-decoration:none !important;
+	padding:20px 17% 22px;
+	margin:0 0 30px;
+	border:1px solid #312fa1;
+}
+.about--plan--link:hover {
+	color:#ffffff;
+	background:#312fa1;
+}
 .about--plan__row {
 	position:relative;
 	padding:30px 17% 13px;
 	margin:0 0 30px;
 	border:1px solid #312fa1;
-}
-.about--plan__row:first-child {
-	border-top-color:transparent;
 }
 .about--plan--title {
 	overflow:hidden;
@@ -3345,6 +3357,10 @@ button::-moz-focus-inner {
 		overflow:hidden;
 		padding:16px 13px 22px;
 		margin:0 2px 2px;
+	}
+	.about--plan--link {
+		padding:14px 14px 16px;
+		margin:0 0 20px;
 	}
 	.about--plan__row {
 		padding:20px 14px 10px;
