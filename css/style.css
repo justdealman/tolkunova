@@ -3487,7 +3487,7 @@ button::-moz-focus-inner {
 	}
 	.reviews__item {
 		min-height:0;
-		padding:48px 15px 48px;
+		padding:15px 15px 48px;
 		margin:0 15px 7px;
 	}
 	.reviews__item:before {
