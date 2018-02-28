@@ -1441,7 +1441,6 @@ button::-moz-focus-inner {
 	box-shadow:0 1px 4px rgba(0,0,0,0.25);
 }
 .reviews__item:before {
-	content:'';
 	position:absolute;
 	left:324px;
 	top:0;
