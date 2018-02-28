@@ -55,15 +55,6 @@
     font-style:italic;
 }
 @font-face {
-    font-family:'Rosa Marena';
-    src:url('../fonts/rosamarena.eot');
-    src:url('../fonts/rosamarena.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/rosamarena.woff') format('woff'),
-        url('../fonts/rosamarena.ttf') format('truetype');
-    font-weight:normal;
-    font-style:normal;
-}
-@font-face {
     font-family:'Noto Serif';
     src:url('../fonts/notoserif.eot');
     src:url('../fonts/notoserif.eot?#iefix') format('embedded-opentype'),
@@ -990,12 +981,12 @@ button::-moz-focus-inner {
 }
 .about--intro h1 {
 	color:#613287;
-	font-size:48px;
-	line-height:55px;
+	font-size:38px;
+	line-height:44px;
 	font-weight:normal;
 	font-style:italic;
-	font-family:'Rosa Marena', serif;
-	padding:48px 33.33% 29px 92px;
+	font-family:'Mon Amour One', serif;
+	padding:38px 33.33% 29px 92px;
 	margin:0;
 }
 .about__row {
@@ -1684,19 +1675,19 @@ button::-moz-focus-inner {
 
 .intro {
 	color:#363636;
-	padding:35px 0 0;
+	padding:20px 0 0;
 	margin:0 0 29px;
 }
 .intro h1 {
 	color:#613287;
-	font-size:48px;
-	line-height:43px;
+	font-size:38px;
+	line-height:44px;
 	font-weight:normal;
 	font-style:italic;
-	font-family:'Rosa Marena', serif;
+	font-family:'Mon Amour One', serif;
 	text-align:center;
 	padding:0;
-	margin:0 0 41px;
+	margin:0 0 40px;
 }
 .intro p {
 	font-size:16px;
@@ -2503,10 +2494,10 @@ button::-moz-focus-inner {
 }
 .modal h2 {
 	color:#613287;
-	font-size:48px;
-	line-height:36px;
+	font-size:36px;
+	line-height:42px;
 	font-weight:normal;
-	font-family:'Rosa Marena', serif;
+	font-family:'Mon Amour One', serif;
 	padding:0;
 	margin:0 0 24px;
 }
@@ -3217,9 +3208,9 @@ button::-moz-focus-inner {
 		margin:0;
 	}
 	.about--intro h1 {
-		font-size:36px;
+		font-size:26px;
 		line-height:32px;
-		padding:20px 13px;
+		padding:15px 13px 20px;
 	}
 	.about__row {
 		margin:0 0 18px;
@@ -3410,13 +3401,13 @@ button::-moz-focus-inner {
 		display:none;
 	}
 	.intro {
-		padding:30px 0 0;
-		margin:0 15px 20px;
+		padding:15px 0 0;
+		margin:0 15px 15px;
 	}
 	.intro h1 {
-		font-size:36px;
-		line-height:30px;
-		margin:0 0 30px;
+		font-size:26px;
+		line-height:32px;
+		margin:0 0 15px;
 	}
 	.intro p {
 		font-size:14px;
@@ -3424,7 +3415,7 @@ button::-moz-focus-inner {
 		margin:0 0 14px;
 	}
 	.intro h1 + p {
-		margin-top:-10px;
+		margin-top:-5px;
 	}
 	.intro p br {
 		display:none;
@@ -3883,8 +3874,8 @@ button::-moz-focus-inner {
 		margin:0 0 16px;
 	}
 	.modal h2 {
-		font-size:32px;
-		line-height:28px;
+		font-size:26px;
+		line-height:32px;
 		margin:0 0 16px;
 	}
 	.modal p {
