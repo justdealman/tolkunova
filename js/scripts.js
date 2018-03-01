@@ -177,6 +177,22 @@ $(function() {
 			$('[data-table-row] span.title').remove();
 		}
 	}
+	function setGalleryHeight() {
+		$('.about-gallery__grid').each(function() {
+			var t = $(this);
+			var e = t.find('.about-gallery__item');
+			if ( Modernizr.mq('(max-width:960px)') && Modernizr.mq('(min-width:768px)') ) {
+				var max = 8;
+			} else {
+				var max = 6;
+			}
+			if ( e.size() > max ) {
+				t.height(e.eq(max).offset().top-t.offset().top);
+			} else {
+				t.height('auto');
+			}
+		});
+	}
 	function startApp() {
 		if ( $('.welcome').length ) {
 			setWelcome();
@@ -197,6 +213,9 @@ $(function() {
 		setEqualHeight();
 		setRatio();
 		$('.welcome--slider .slide').height($('.welcome .item-1').outerHeight());
+		if ( $('.about-gallery__grid').length ) {
+			setGalleryHeight();
+		}
 	}
 	startApp();
 	var lastWidth = $(window).width();

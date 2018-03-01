@@ -1342,6 +1342,7 @@ button::-moz-focus-inner {
 	margin:0 0 45px;
 }
 .about-gallery__grid {
+	overflow:hidden;
 	font-size:0;
 }
 .about-gallery__item {
